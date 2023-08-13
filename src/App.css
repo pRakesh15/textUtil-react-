@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+#brandname
+{
+  color: rgb(43, 241, 43);
+}
+#navbar
+{
+  background-color: rgb(238, 220, 195);
+}
