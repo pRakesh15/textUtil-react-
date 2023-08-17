@@ -50,7 +50,6 @@ setText(oldtext)
     }
     const handelOnchange=(event)=>
     {
-      
         setText(event.target.value)
        
     }
@@ -80,7 +79,7 @@ setText(oldtext)
       </div>
       <div className="contener" style={myStyle}>
       <h2>Text summary</h2>
-      <p>There are {text.split(" ").length} Words and {text.length} Letters </p>
+      <p>There are {text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words and {text.length} Letters </p>
       <p>You can read the text  in <span className="time">{0.008*text.split(" ").length}</span> minutes approximatily!</p>
       <h3>Text summary</h3>
       <p>{text}</p>
